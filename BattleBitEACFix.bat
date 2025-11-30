@@ -43,10 +43,10 @@ pause
 cls
 
 echo [91m
-SET GamePath=
+set GamePath=
 if exist "%~dp0\BattleBit.exe" SET GamePath="%~dp0"
-FOR /F "tokens=2* skip=2" %%a in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 671860" /v "InstallLocation"') do SET GamePath="%%b"
-if DEFINED GamePath (
+for /F "tokens=2* skip=2" %%a in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 671860" /v "InstallLocation"') do set GamePath="%%b"
+if defined GamePath (
    echo [0m[94m[...][0m Game Path: %GamePath%
 ) else (
    echo [91m[X][0m Unable to detect BattleBit Remastered folder. Please install the game first, then run this batch script.
@@ -197,6 +197,15 @@ echo.
 CHOICE /C YN /M "Do you want to reboot your PC (recommended)"
 
 IF %ERRORLEVEL% EQU 1 (
+    setlocal enabledelayedexpansion
+    for /l %%i in (10,-1,1) do (
+        cls
+        echo.
+        echo Shutting down in %%i seconds...
+        echo.
+        title Shutting down in %%i seconds...
+        timeout /t 1 /nobreak > nul
+    )
     shutdown /r /f /t 0
 ) ELSE IF %ERRORLEVEL% EQU 2 (
     echo.
