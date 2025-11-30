@@ -25,6 +25,7 @@ mkdir "%Logs%\Dumps" >nul
 mkdir "%Logs%\EAC" >nul
 echo [94m[...][0m Copying game logs
 xcopy /i "C:\Users\%username%\AppData\LocalLow\BattleBitDevTeam\BattleBit\" "%Logs%\" >nul
+xcopy /i "C:\Users\%username%\AppData\LocalLow\BattleBitOperationOverhaulTeam\BattleBit" "%Logs%\Playtest\" >nul
 echo [94m[...][0m Copying EAC logs
 copy /y "%appdata%\EasyAntiCheat\anticheatlauncher.log" "%Logs%\EAC" >nul
 copy /y "%appdata%\EasyAntiCheat\service.log" "%Logs%\EAC" >nul

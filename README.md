@@ -3,12 +3,11 @@
   BattleBit EAC Fix</h1>
   
 [![Download batch](https://custom-icon-badges.herokuapp.com/badge/-Download-black?style=for-the-badge&logo=download&logoColor=white)](https://github.com/livingflore/BattleBitEACFix/releases)
+[![Support](https://custom-icon-badges.herokuapp.com/badge/-Support-black?style=for-the-badge&logo=mail&logoColor=white)](https://support.joinbattlebit.com/)
 [![Discord](https://custom-icon-badges.herokuapp.com/badge/-Discord-black?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/battlebit)
 [![Docs](https://custom-icon-badges.herokuapp.com/badge/-Docs-black?style=for-the-badge&logo=repo&logoColor=white)](https://docs.joinbattlebit.com/)
 
-
 This batch script reinstalls EAC completely and also installs VCRedist x86-64 2015-2022 to fix [this](https://i.imgur.com/tKGFam6.png) and other issues.
-
 
 <h2 align="center">
   Further Troubleshooting</h2>
@@ -19,7 +18,7 @@ This batch script reinstalls EAC completely and also installs VCRedist x86-64 20
 
 ### • [CreateFile failed with 32.](https://docs.joinbattlebit.com/eac/createfile-failed-with-32)
 
-### • [Untrusted System File](https://docs.joinbattlebit.com/eac/untrusted-system-file) 
+### • [Untrusted System File](https://docs.joinbattlebit.com/eac/untrusted-system-file)
 
 ### • [StartService EasyAntiCheat_EOSSys failed with 5.](https://docs.joinbattlebit.com/eac/startservice-easyanticheat_eossys-failed-with-5)
 
